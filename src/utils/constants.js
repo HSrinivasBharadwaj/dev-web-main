@@ -1,1 +1,1 @@
-export const BASE_URI = "http://localhost:7777"
+export const BASE_URI = "/api"
