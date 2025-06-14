@@ -10,7 +10,7 @@ const UserCard = ({user}) => {
     const {firstName,lastName,about,photoUrl,_id} = user
     const handleSendRequest = async(status,id) => {
       try {
-        const response = await axios.post(BASE_URI + "/request/sendConnectionRequest/" + status + "/" + id, {},{
+        const response = await axios.post(BASE_URI + "/request/send/" + status + "/" + id, {},{
           withCredentials: true
         })
         dispatch(removeUser(id))
